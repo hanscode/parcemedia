@@ -25,6 +25,7 @@ wp-content/*
 
 # ignore sensible files in root
 wp-config-sample.php
+wp-config.php
 /license.txt
 /readme.html
 /.htaccess
