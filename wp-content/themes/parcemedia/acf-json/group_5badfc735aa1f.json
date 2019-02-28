@@ -1,0 +1,229 @@
+{
+    "key": "group_5badfc735aa1f",
+    "title": "Partial: Sections",
+    "fields": [
+        {
+            "key": "field_5badfc78b1465",
+            "label": "Sections",
+            "name": "sections",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "5badfc7de5e91": {
+                    "key": "5badfc7de5e91",
+                    "name": "hello_world",
+                    "label": "Hello World",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5badfc87b1466",
+                            "label": "Section: Hello World",
+                            "name": "section:_hello_world",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5badfc361d354"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5bc49a98959b1": {
+                    "key": "layout_5bc49a98959b1",
+                    "name": "broken_sidebar",
+                    "label": "Broken Sidebar",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5bc49a98959b2",
+                            "label": "Section: Broken Sidebar",
+                            "name": "section:_broken_sidebar",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5bc49ab339a7b"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5bc49f364b3e0": {
+                    "key": "layout_5bc49f364b3e0",
+                    "name": "social_icons",
+                    "label": "Social Icons",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5bc49f364b3e1",
+                            "label": "Section: Social Icons",
+                            "name": "section:_social_icons",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5bc49f199d19f"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c5379b4dc4fd": {
+                    "key": "layout_5c5379b4dc4fd",
+                    "name": "alerts",
+                    "label": "Alerts",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c537a0edc4ff",
+                            "label": "Section: Alerts",
+                            "name": "section:_alerts",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c534b8ceaade"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c5742ed949d3": {
+                    "key": "layout_5c5742ed949d3",
+                    "name": "cta_button",
+                    "label": "CTA Button",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c5742ed949d4",
+                            "label": "Section: CTA Button",
+                            "name": "section:_cta_button",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c572a4d5feb5"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c5b122aa7070": {
+                    "key": "layout_5c5b122aa7070",
+                    "name": "logos_carousel",
+                    "label": "Logos Carousel",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c5b124ba7072",
+                            "label": "Section: Logos Carousel",
+                            "name": "section:_logos_carousel",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c5b0edde98de"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1549472428
+}
