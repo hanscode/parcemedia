@@ -15,6 +15,7 @@ Copyright 2018 Webpixels
 // Swiper
 // init of plugin Swiper JS
 //
+( function( $ ) {
 
 'use strict';
 
@@ -440,7 +441,7 @@ var CustomInputFile = (function() {
 			$input.on('change', function(e) {
 				var $this = this,
 					$e = e;
-					
+
 				change($input, $this, $e);
 	        });
 
@@ -1554,3 +1555,4 @@ var Wavify = (function() {
 	}
 
 })();
+} )( jQuery );

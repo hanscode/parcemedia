@@ -27,6 +27,7 @@ var replace = require('gulp-replace');
 var saveLicense = require('uglify-save-license');
 var useref = require('gulp-useref-plus');
 var wait = require('gulp-wait');
+var concat = require('gulp-concat');
 
 // Define paths
 
@@ -79,8 +80,9 @@ gulp.task('minify:css', function() {
 // Minify JS
 
 gulp.task('minify:js', function(cb) {
-    return gulp.src(paths.src.base + '/assets/js/theme.js')
+    return gulp.src(paths.src.js)
         .pipe(plumber())
+        .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest(paths.dist.base + '/js'));
@@ -100,6 +102,8 @@ gulp.task('browserSync', function() {
 
 gulp.task('watch', ['browserSync', 'scss'], function() {
     gulp.watch(paths.src.scss, ['scss']);
+    gulp.watch(paths.src.css + '/theme.css', ['minify:css']);
+    gulp.watch(paths.src.js, ['minify:js']);
     gulp.watch(paths.src.js, browserSync.reload);
     gulp.watch(paths.src.html, browserSync.reload);
 });
@@ -129,7 +133,7 @@ gulp.task('build', function(callback) {
 // Default
 
 gulp.task('default', function(callback) {
-    runSequence(['scss', 'browserSync', 'watch'],
+    runSequence(['scss', 'minify:css', 'minify:js', 'browserSync', 'watch'],
         callback
     );
 });
