@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<main class="main" role="main">
-
   <!-- Page Content -->
   <section class="slice slice-lg">
 
@@ -25,7 +23,6 @@
   </div>
   <!-- /.container -->
 </section>
-</main>
 
 <?php get_footer(); ?>
 

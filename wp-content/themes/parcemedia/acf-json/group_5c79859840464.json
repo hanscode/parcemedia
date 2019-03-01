@@ -1,0 +1,48 @@
+{
+    "key": "group_5c79859840464",
+    "title": "Navbar Background",
+    "fields": [
+        {
+            "key": "field_5c7985a86e185",
+            "label": "Select a Navbar",
+            "name": "select_a_navbar",
+            "type": "radio",
+            "instructions": "Select a navbar background",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "dark": "Dark"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-dynamic.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1551468829
+}

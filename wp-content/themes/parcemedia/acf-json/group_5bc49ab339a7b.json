@@ -1,10 +1,10 @@
 {
     "key": "group_5bc49ab339a7b",
-    "title": "Section: Broken Sidebar",
+    "title": "Section: Cover Home",
     "fields": [
         {
             "key": "field_5bc49ab33e6fb",
-            "label": "Help",
+            "label": "cover_home",
             "name": "",
             "type": "message",
             "instructions": "",
@@ -37,5 +37,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1539611401
+    "modified": 1551467877
 }

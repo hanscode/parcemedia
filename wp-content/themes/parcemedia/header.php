@@ -17,13 +17,20 @@
 
 <header class="header-transparent" id="header-main">
 
+  <?php $nav = get_field('select_a_navbar'); ?>
+
     <!-- Topbar -->
-    <div id="navbar-top-main" class="navbar-top  navbar-light bg-white border-bottom">
+    <?php if ($nav && $nav = 'dark'): ?>
+      <div id="navbar-top-main" class="navbar-top navbar-dark bg-dark border-bottom">
+      <?php else : ?>
+      <div id="navbar-top-main" class="navbar-top navbar-light bg-white border-bottom">
+    <?php endif; ?>
+
         <div class="container">
             <div class="navbar-nav align-items-center">
-                <div class="d-none d-lg-inline-block">
+                <!--<div class="d-none d-lg-inline-block">
                     <span class="navbar-text mr-3">Parce Media, LLC</span>
-                </div>
+                </div>-->
                 <div>
                     <ul class="nav">
                         <li class="nav-item dropdown ml-lg-2 dropdown-animate" data-toggle="hover">
@@ -58,11 +65,19 @@
 
 
     <!-- Main navbar -->
-    <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-light bg-white" id="navbar-main">
-    <!--<nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-dark bg-dark" id="navbar-main">-->
+    <?php if ($nav && $nav = 'dark'): ?>
+      <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-dark bg-dark" id="navbar-main">
+      <?php else : ?>
+        <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-light bg-white" id="navbar-main">
+    <?php endif; ?>
         <div class="container">
             <a class="navbar-brand mr-lg-5" href="<?php bloginfo('url'); ?>">
+              <?php if ($nav && $nav = 'dark'): ?>
+                <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/white.png" style="height: 50px;">
+              <?php else : ?>
                 <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/dark.png" style="height: 50px;">
+              <?php endif; ?>
+
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,17 +87,20 @@
             <div class="collapse navbar-collapse" id="navbar-main-collapse">
                 <ul class="navbar-nav align-items-lg-center">
                     <li class="nav-item ">
-                        <a class="nav-link" href="<?php echo get_template_directory_uri(); ?>/index.html">Overview</a>
+                        <a class="nav-link" href="<?php bloginfo('url'); ?>">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
-                        <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                        <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow py-0">
                             <div class="list-group">
                                 <a href="<?php echo get_template_directory_uri(); ?>/pages/pages-landing.html" class="list-group-item list-group-item-action">
                                     <div class="media d-flex align-items-center">
                                         <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/browser-window.svg" class="img-saturate" style="width: 50px;">
                                         <div class="media-body ml-3">
-                                            <h6 class="mb-1">Landing Pages</h6>
+                                            <h6 class="mb-1">Social Media Coaching</h6>
                                             <p class="mb-0">A great point to start from.</p>
                                         </div>
                                     </div>
@@ -91,7 +109,7 @@
                                     <div class="media d-flex align-items-center">
                                         <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/ios-photos.svg" class="img-saturate" style="width: 50px;">
                                         <div class="media-body ml-3">
-                                            <h6 class="mb-1">Secondary Pages</h6>
+                                            <h6 class="mb-1">Social Media Consulting</h6>
                                             <p class="mb-0">Build your website with these demos.</p>
                                         </div>
                                     </div>
@@ -100,16 +118,16 @@
                                     <div class="media d-flex align-items-center">
                                         <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/maintenance.svg" class="img-saturate" style="width: 50px;">
                                         <div class="media-body ml-3">
-                                            <h6 class="mb-1">Account Pages</h6>
+                                            <h6 class="mb-1">Social Media Management</h6>
                                             <p class="mb-0">Account management made easy.</p>
                                         </div>
                                     </div>
                                 </a>
                                 <a href="<?php echo get_template_directory_uri(); ?>/pages/pages-shop.html" class="list-group-item list-group-item-action">
                                     <div class="media d-flex align-items-center">
-                                        <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/in-progress.svg" class="img-saturate" style="width: 50px;">
+                                        <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/bullish.svg" class="img-saturate" style="width: 50px;">
                                         <div class="media-body ml-3">
-                                            <h6 class="mb-1">Shop Pages</h6>
+                                            <h6 class="mb-1">Reporting & Analysis</h6>
                                             <p class="mb-0">Explore the full ecommerce website flow.</p>
                                         </div>
                                     </div>
@@ -117,25 +135,24 @@
                             </div>
                         </div>
                     </li>
-                    <!--<li class="nav-item">
-                        <a class="nav-link" href="<?php echo get_template_directory_uri(); ?>/docs/alerts.html" role="button">Components</a>
-                    </li>-->
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
                 </ul>
 
                 <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                    <!--<li class="nav-item">
-                        <a class="nav-link" href="<?php echo get_template_directory_uri(); ?>/docs/introduction.html" target="_blank">Docs</a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo get_template_directory_uri(); ?>/docs/changelog.html" target="_blank">Changelog</a>
-                    </li>-->
+                        <a class="nav-link" href="#" target="_blank">Blog</a>
+                    </li>
                     <li class="nav-item mr-0">
-                        <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="nav-link d-lg-none">Get started</a>
-                        <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="btn btn-sm btn-primary btn-circle btn-icon d-none d-lg-inline-flex">
-
-                        <!--<a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="btn btn-sm btn-white btn-circle btn-icon d-none d-lg-inline-flex">-->
-                            <!--<span class="btn-inner--icon"><i class="fas fa-shopping-cart"></i></span>-->
-                            <span class="btn-inner--text">Purchase now</span>
+                        <a href="#" target="_blank" class="nav-link d-lg-none">Get started</a>
+                        <?php if ($nav && $nav = 'dark'): ?>
+                          <a href="#" target="_blank" class="btn btn-sm btn-white btn-circle btn-icon d-none d-lg-inline-flex">
+                        <?php else : ?>
+                          <a href="#" target="_blank" class="btn btn-sm btn-dark btn-circle btn-icon d-none d-lg-inline-flex">
+                        <?php endif; ?>
+                            <span class="btn-inner--text">Get started</span>
                         </a>
                     </li>
                 </ul>
@@ -145,3 +162,6 @@
     </nav>
 
 </header>
+
+<main role="main">
+  <!-- <main class="main" role="main"> -->

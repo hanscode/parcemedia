@@ -1,5 +1,15 @@
 .admin-bar {
   header {
-    top: 52px;
+    top: 32px;
   }
+
+  .navbar-sticky {
+    &.sticky {
+      top: -68px;
+    }
+  }
+}
+
+main {
+  min-height: calc(100vh - 89px);
 }

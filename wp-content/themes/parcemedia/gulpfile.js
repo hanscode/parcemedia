@@ -28,6 +28,7 @@ var saveLicense = require('uglify-save-license');
 var useref = require('gulp-useref-plus');
 var wait = require('gulp-wait');
 var concat = require('gulp-concat');
+var sassLint = require('gulp-sass-lint');
 
 // Define paths
 

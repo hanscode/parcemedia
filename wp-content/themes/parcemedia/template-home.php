@@ -1,3 +1,8 @@
+<?php
+/*
+  Template Name: Home Template
+*/
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,25 +18,12 @@
     <!-- Favicon -->
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/brand/favicon.png" type="image/png">
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800">
-
-    <!-- Font Awesome 5 -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
-    <!-- Page plugins -->
-    <link type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/vendor/highlight.js/styles/atom-one-dark.css" rel="stylesheet">
-
-
-
-
-
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/theme.css">
+    <?php wp_head(); ?>
 
 
 </head>
 
-<body>
+<body <?php  body_class(); ?>>
 
 
     <header class="header-transparent" id="header-main">
@@ -768,22 +760,7 @@ $danger:        $red;
     </footer>
 
 
-    <!-- Core -->
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/jquery/dist/jquery.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/in-view/dist/in-view.min.js"></script>
-
-
-
-
-    <!-- Page plugins -->
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/vendor/highlight.js/lib/highlight.js"></script>
-
-
-
-    <!-- Theme JS -->
-
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/theme.min.js"></script>
+  <?php wp_footer(); ?>
 
 
 

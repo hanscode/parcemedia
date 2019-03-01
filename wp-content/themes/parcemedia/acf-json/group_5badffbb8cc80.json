@@ -27,9 +27,9 @@
     "location": [
         [
             {
-                "param": "post_template",
+                "param": "page_template",
                 "operator": "==",
-                "value": "views\/template-dynamic.blade.php"
+                "value": "template-dynamic.php"
             }
         ]
     ],
@@ -39,9 +39,12 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "the_content"
+        "the_content",
+        "discussion",
+        "comments",
+        "revisions"
     ],
     "active": 1,
     "description": "",
-    "modified": 1538129987
+    "modified": 1550639633
 }
