@@ -4,42 +4,36 @@
         <div class="row pt-md">
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <a href="../index.html">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/white.png" alt="Footer logo" style="height: 70px;">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/logo.svg" alt="Footer logo" style="height: 70px;">
                 </a>
-                <p class="text-sm">A unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.</p>
+                <p class="text-sm mt-4">Through branding, digital marketing and strategic communications, Parece Media helps small businesses compete and win with expert strategy, powerful creative and award-winning websites, campaigns and digital experiences.</p>
             </div>
             <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
-                <h6 class="heading mb-3">Account</h6>
+                <h6 class="heading mb-3">Services</h6>
                 <ul class="list-unstyled">
-                    <li><a href="../pages/account-profile.html">Profile</a>
+                    <li><a href="#">Consulting</a>
                     </li>
-                    <li><a href="../pages/account-settings.html">Settings</a>
+                    <li><a href="#">Coaching</a>
                     </li>
-                    <li><a href="../pages/account-billing.html">Billing</a>
-                    </li>
-                    <li><a href="../pages/account-notifications.html">Notifications</a>
+                    <li><a href="#">Ads Management</a>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
                 <h6 class="heading mb-3">About</h6>
                 <ul class="list-unstyled text-small">
-                    <li><a href="#">Services</a>
+                    <li><a href="#">Blog</a>
                     </li>
                     <li><a href="#">Contact</a>
-                    </li>
-                    <li><a href="#">Careers</a>
                     </li>
                 </ul>
             </div>
             <div class="col-lg-2 col-sm-4 mb-5 mb-lg-0">
-                <h6 class="heading mb-3">Company</h6>
+                <h6 class="heading mb-3">Legal</h6>
                 <ul class="list-unstyled">
                     <li><a href="#">Terms</a>
                     </li>
                     <li><a href="#">Privacy</a>
-                    </li>
-                    <li><a href="#">Support</a>
                     </li>
                 </ul>
             </div>

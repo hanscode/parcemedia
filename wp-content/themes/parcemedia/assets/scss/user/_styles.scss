@@ -1,1 +1,21 @@
 // Add your custom styles below
+.section-rotate {
+  .btn-dark {
+    color: #fff;
+    border-color: #d40c4a;
+    background-color: #d40c4a;
+    box-shadow: none;
+
+    &:hover {
+      border-color: #ff9500;
+      background-color: #ff9500;
+    }
+  }
+}
+
+.btn-dark {
+  &:hover {
+    border-color: #d40c4a;
+    background-color: #d40c4a;
+  }
+}

@@ -28,9 +28,6 @@
 
         <div class="container">
             <div class="navbar-nav align-items-center">
-                <!--<div class="d-none d-lg-inline-block">
-                    <span class="navbar-text mr-3">Parce Media, LLC</span>
-                </div>-->
                 <div>
                     <ul class="nav">
                         <li class="nav-item dropdown ml-lg-2 dropdown-animate" data-toggle="hover">
@@ -73,9 +70,9 @@
         <div class="container">
             <a class="navbar-brand mr-lg-5" href="<?php bloginfo('url'); ?>">
               <?php if ($nav && $nav = 'dark'): ?>
-                <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/white.png" style="height: 50px;">
+                <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/logo.svg" style="height: 50px;">
               <?php else : ?>
-                <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/dark.png" style="height: 50px;">
+                <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/logo-dark.svg" style="height: 50px;">
               <?php endif; ?>
 
             </a>
@@ -98,37 +95,28 @@
                             <div class="list-group">
                                 <a href="<?php echo get_template_directory_uri(); ?>/pages/pages-landing.html" class="list-group-item list-group-item-action">
                                     <div class="media d-flex align-items-center">
-                                        <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/browser-window.svg" class="img-saturate" style="width: 50px;">
+                                        <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/list.svg" class="img-saturate" style="width: 50px;">
                                         <div class="media-body ml-3">
-                                            <h6 class="mb-1">Social Media Coaching</h6>
+                                            <h6 class="mb-1">Social Media Consulting</h6>
                                             <p class="mb-0">A great point to start from.</p>
                                         </div>
                                     </div>
                                 </a>
                                 <a href="<?php echo get_template_directory_uri(); ?>/pages/pages-secondary.html" class="list-group-item list-group-item-action">
                                     <div class="media d-flex align-items-center">
-                                        <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/ios-photos.svg" class="img-saturate" style="width: 50px;">
+                                        <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/details-popup.svg" class="img-saturate" style="width: 50px;">
                                         <div class="media-body ml-3">
-                                            <h6 class="mb-1">Social Media Consulting</h6>
+                                            <h6 class="mb-1">Social Media Coaching</h6>
                                             <p class="mb-0">Build your website with these demos.</p>
                                         </div>
                                     </div>
                                 </a>
                                 <a href="<?php echo get_template_directory_uri(); ?>/pages/pages-account.html" class="list-group-item list-group-item-action">
                                     <div class="media d-flex align-items-center">
-                                        <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/maintenance.svg" class="img-saturate" style="width: 50px;">
+                                        <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/in-progress.svg" class="img-saturate" style="width: 50px;">
                                         <div class="media-body ml-3">
                                             <h6 class="mb-1">Social Media Management</h6>
-                                            <p class="mb-0">Account management made easy.</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="<?php echo get_template_directory_uri(); ?>/pages/pages-shop.html" class="list-group-item list-group-item-action">
-                                    <div class="media d-flex align-items-center">
-                                        <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/bullish.svg" class="img-saturate" style="width: 50px;">
-                                        <div class="media-body ml-3">
-                                            <h6 class="mb-1">Reporting & Analysis</h6>
-                                            <p class="mb-0">Explore the full ecommerce website flow.</p>
+                                            <p class="mb-0">Ads management made easy.</p>
                                         </div>
                                     </div>
                                 </a>

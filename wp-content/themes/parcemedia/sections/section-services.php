@@ -10,7 +10,7 @@
                         <div class="px-4 pb-5 text-center">
                           <h2 class="text-white">Services</h2>
                             <!--<a href="<?php echo get_template_directory_uri(); ?>/pages/pages-landing.html" class="btn btn-sm btn-white btn-circle">Social Media</a>-->
-                            <p class="text-white mt-4">Let's get started with one of these landing page examples.</p>
+                            <p class="text-white mt-4">Let's get started with one of these digital marketing services.</p>
                         </div>
                     </div>
                 </div>

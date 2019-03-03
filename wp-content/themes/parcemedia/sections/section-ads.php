@@ -25,7 +25,7 @@
     <div class="container position-relative zindex-100">
         <div class="mb-md text-center">
             <span class="badge badge-lg badge-success badge-pill">Ads tools</span>
-            <h3 class="mt-4">Social Media <strong class="font-weight-700">Ads Management</strong></h3>
+            <h3 class="mt-4">Social <strong class="font-weight-700">Ads Management</strong></h3>
             <div class="fluid-paragraph text-center mt-4">
                 <p class="lead lh-180">Focusing to drive clients to your business I will setup, target and monitor paid campaigns to make more profitable your business.</p>
             </div>

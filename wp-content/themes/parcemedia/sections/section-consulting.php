@@ -23,19 +23,19 @@
             <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/add.svg" class="img-saturate" style="width: 50px;">
         </div>
         <div class="floating-icon"><span></span>
-            <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/change-theme.svg" class="img-saturate" style="width: 76px;">
+            <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/numbered-list.svg" class="img-saturate" style="width: 76px;">
         </div>
         <div class="floating-icon"><span></span>
             <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/comments.svg" class="img-saturate" style="width: 36px;">
         </div>
         <div class="floating-icon"><span></span>
-            <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/download.svg" class="img-saturate" style="width: 76px;">
+            <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/bullish.svg" class="img-saturate" style="width: 76px;">
         </div>
         <div class="floating-icon"><span></span>
-            <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/form.svg" class="img-saturate" style="width: 46px;">
+            <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/faq.svg" class="img-saturate" style="width: 46px;">
         </div>
         <div class="floating-icon"><span></span>
-            <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/ios-photos.svg" class="img-saturate" style="width: 36px;">
+            <img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dusk/svg/email.svg" class="img-saturate" style="width: 36px;">
         </div>
     </div>
 </section>

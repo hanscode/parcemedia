@@ -34,10 +34,10 @@
             <div class="col-lg-5 text-center text-lg-left">
                 <div class="py-4">
                     <h2 class="text-white my-4">
-              <span class="display-4 font-weight-light">See it. Love it</span>
-              <span class="d-block">Purpose <strong class="font-weight-light">Website UI Kit</strong></span>
+              <span class="display-4 font-weight-light">It's time to go social</span>
+              <span class="d-block">We'll <strong class="font-weight-light"> make it simple.</strong></span>
           </h2>
-                    <p class="lead text-white">A unique and beautiful collection of UI elements that are all flexible and modular. A complete and customizable solution to building the website of your dreams.</p>
+                    <p class="lead text-white">Let’s identify the opportunities and build a clear road map to success. We are partners in your vision for exceeding your goals.</p>
                     <div class="mt-5">
                         <a href="#sct_page_examples" class="btn btn-dark btn-circle btn-translate--hover btn-icon mr-sm-4 scroll-me">
                             <span class="btn-inner--text">Get started</span>

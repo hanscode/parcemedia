@@ -139,6 +139,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5c7ab42b4353d": {
+                    "key": "layout_5c7ab42b4353d",
+                    "name": "coaching",
+                    "label": "Coaching",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c7ab42b4353e",
+                            "label": "Section: Coaching",
+                            "name": "section:_coaching",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c7ab4014f415"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Row",
@@ -163,5 +194,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1551494339
+    "modified": 1551545421
 }
