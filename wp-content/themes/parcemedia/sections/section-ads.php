@@ -1,4 +1,4 @@
-<section class="slice bg-gradient-secondary overflow-hidden">
+<section class="slice bg-gradient-secondary overflow-hidden" id="sct_ads">
     <div class="bg-absolute-cover bg-size--contain d-flex align-items-center">
         <figure class="w-100">
 

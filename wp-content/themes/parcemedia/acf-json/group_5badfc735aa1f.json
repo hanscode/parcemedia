@@ -49,14 +49,14 @@
                 },
                 "layout_5bc49a98959b1": {
                     "key": "layout_5bc49a98959b1",
-                    "name": "cover_home",
-                    "label": "Cover Home",
+                    "name": "cover",
+                    "label": "Cover",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5bc49a98959b2",
-                            "label": "Section: Cover Home",
-                            "name": "section:_cover_home",
+                            "label": "Section: Cover",
+                            "name": "section:_cover",
                             "type": "clone",
                             "instructions": "",
                             "required": 0,
@@ -172,7 +172,7 @@
                     "max": ""
                 }
             },
-            "button_label": "Add Row",
+            "button_label": "Add Section",
             "min": "",
             "max": ""
         }
@@ -194,5 +194,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1551545421
+    "modified": 1551716135
 }

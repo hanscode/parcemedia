@@ -1,12 +1,12 @@
 {
     "key": "group_5bc49ab339a7b",
-    "title": "Section: Cover Home",
+    "title": "Section: Cover",
     "fields": [
         {
             "key": "field_5bc49ab33e6fb",
-            "label": "cover_home",
-            "name": "",
-            "type": "message",
+            "label": "Title",
+            "name": "cover_title",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,9 +15,79 @@
                 "class": "",
                 "id": ""
             },
-            "message": "No fields to edit here. Simply adding this sectional will render the sidebar code that you'll have to work on. Over and out :)",
-            "new_lines": "wpautop",
-            "esc_html": 0
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c7c6775635bf",
+            "label": "Sub Title",
+            "name": "cover_sub_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c7c6791635c0",
+            "label": "Legend",
+            "name": "cover_legend",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5c7c68469d9dc",
+            "label": "Action Button",
+            "name": "action_btn_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5c7c686e9d9de",
+            "label": "More Button",
+            "name": "more_btn_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -37,5 +107,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1551467877
+    "modified": 1551711907
 }

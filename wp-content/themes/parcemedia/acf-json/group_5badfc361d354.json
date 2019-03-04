@@ -4,9 +4,9 @@
     "fields": [
         {
             "key": "field_5badfc3dc2156",
-            "label": "Services",
-            "name": "",
-            "type": "message",
+            "label": "Services List",
+            "name": "services_list",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,9 +15,109 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Hello World section to demonstrate Dynamic template. Please remove when starting development.",
-            "new_lines": "wpautop",
-            "esc_html": 0
+            "collapsed": "",
+            "min": 0,
+            "max": 4,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5c7d4563e98a2",
+                    "label": "Highlight this block ?",
+                    "name": "highlight_block",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "no": "No",
+                        "yes": "Yes"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "vertical",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_5c7d400ea3660",
+                    "label": "Service Name",
+                    "name": "service_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c7d4024a3661",
+                    "label": "Service Description",
+                    "name": "service_description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_5c7d409da3662",
+                    "label": "Service Icon",
+                    "name": "service_icon",
+                    "type": "text",
+                    "instructions": "Type the icon name (e.g: details-popup )",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c7d40f7a3663",
+                    "label": "Service Link",
+                    "name": "service_link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url"
+                }
+            ]
         }
     ],
     "location": [
@@ -35,7 +135,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 0,
+    "active": 1,
     "description": "",
-    "modified": 1551490266
+    "modified": 1551720714
 }

@@ -13,3 +13,9 @@
 main {
   min-height: calc(100vh - 89px);
 }
+
+ul {
+  &.sub-menu {
+    list-style: none;
+  }
+}

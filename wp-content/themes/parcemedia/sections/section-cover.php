@@ -29,25 +29,38 @@
         </figure>
     </div>
     <!-- Hero container -->
+    <?php
+      //Vars
+      $action_link = get_sub_field('action_btn_link');
+      $more_link = get_sub_field('more_btn_link');
+    ?>
     <div class="container pt-lg pb-xl-md position-relative zindex-100">
         <div class="row">
             <div class="col-lg-5 text-center text-lg-left">
                 <div class="py-4">
                     <h2 class="text-white my-4">
-              <span class="display-4 font-weight-light">It's time to go social</span>
-              <span class="d-block">We'll <strong class="font-weight-light"> make it simple.</strong></span>
+              <span class="display-4 font-weight-light"><?php the_sub_field('cover_title'); ?></span>
+              <span class="d-block"><?php the_sub_field('cover_sub_title'); ?></span>
           </h2>
-                    <p class="lead text-white">Let’s identify the opportunities and build a clear road map to success. We are partners in your vision for exceeding your goals.</p>
-                    <div class="mt-5">
-                        <a href="#sct_page_examples" class="btn btn-dark btn-circle btn-translate--hover btn-icon mr-sm-4 scroll-me">
-                            <span class="btn-inner--text">Get started</span>
-                            <span class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
-                        </a>
-                        <a href="#sct_features" class="btn btn-outline-white btn-circle btn-translate--hover btn-icon d-none d-xl-inline-block scroll-me">
-                            <span class="btn-inner--icon"><i class="fas fa-file-alt"></i></span>
-                            <span class="btn-inner--text">Learn more</span>
-                        </a>
-                    </div>
+                    <p class="lead text-white"><?php the_sub_field('cover_legend'); ?></p>
+
+                      <div class="mt-5">
+                        <?php if ($action_link): ?>
+                          <a href="<?php echo esc_url($action_link['url']); ?>" class="btn btn-dark btn-circle btn-translate--hover btn-icon mr-sm-4 scroll-me">
+                              <span class="btn-inner--text"><?php echo esc_html($action_link['title']); ?></span>
+                              <span class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
+                          </a>
+                          <?php endif; ?>
+
+                          <?php if ($more_link): ?>
+                          <a href="<?php echo esc_url($more_link['url']); ?>" class="btn btn-outline-white btn-circle btn-translate--hover btn-icon d-none d-xl-inline-block scroll-me">
+                              <span class="btn-inner--icon"><i class="fas fa-file-alt"></i></span>
+                              <span class="btn-inner--text"><?php  echo esc_html($more_link['title']); ?></span>
+                          </a>
+                          <?php endif; ?>
+                      </div>
+
+
                 </div>
             </div>
         </div>

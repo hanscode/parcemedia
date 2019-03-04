@@ -1,8 +1,8 @@
-<section class="slice slice-lg" id="sct_features">
+<section class="slice slice-lg" id="sct_coaching">
 
     <div class="container">
         <div class="mb-md text-center">
-            <h3 class="h3">Social Media Coaching</h3>
+            <h3 class="h3 mt-5">Social Media Coaching</h3>
             <div class="fluid-paragraph text-center mt-4">
                 <p class="lead lh-180">We'll share our experience and the knowledge from the past 10 years in social media marketing to guide you how to use correctly the social networks, choosing the right channels and tools to make your business or product more profitable.</p>
             </div>
