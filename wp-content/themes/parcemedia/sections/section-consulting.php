@@ -1,5 +1,5 @@
 <section class="slice slice-xl bg-gradient-primary has-floating-items" id="sct_consulting">
-    <a href="#sct_call_to_action" class="tongue tongue-up tongue-secondary scroll-me"><i class="fas fa-angle-up"></i></a>
+    <a href="#sct_consulting" class="tongue tongue-up tongue-secondary scroll-me"><i class="fas fa-angle-up"></i></a>
     <div class="container text-center">
         <div class="row">
             <div class="col-12">

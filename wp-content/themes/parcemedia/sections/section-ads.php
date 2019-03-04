@@ -24,58 +24,52 @@
     </div>
     <div class="container position-relative zindex-100">
         <div class="mb-md text-center">
-            <span class="badge badge-lg badge-success badge-pill">Ads tools</span>
-            <h3 class="mt-4">Social <strong class="font-weight-700">Ads Management</strong></h3>
-            <div class="fluid-paragraph text-center mt-4">
-                <p class="lead lh-180">Focusing to drive clients to your business I will setup, target and monitor paid campaigns to make more profitable your business.</p>
-            </div>
+            <?php if (get_sub_field('ads_badge_title')): ?>
+              <span class="badge badge-lg badge-success badge-pill"><?php the_sub_field('ads_badge_title'); ?></span>
+            <?php endif; ?>
+
+            <?php if (get_sub_field('ads_section_title')): ?>
+              <h3 class="mt-4">Social <strong class="font-weight-700"><?php the_sub_field('ads_section_title'); ?></strong></h3>
+            <?php endif; ?>
+
+            <?php if (get_sub_field('ads_section_description')): ?>
+              <div class="fluid-paragraph text-center mt-4">
+                  <p class="lead lh-180"><?php the_sub_field('ads_section_description'); ?></p>
+              </div>
+            <?php endif; ?>
         </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card shadow border-0 mb-4">
-                    <div class="card-body py-5">
-                        <div class="d-flex align-items-start">
-                            <div class="icon icon-shape icon-green rounded-circle">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                            <div class="icon-text pl-4">
-                                <h5 class="font-weight-bold">Develop a Strategy</h5>
-                            </div>
-                        </div>
-                        <p class="mt-4">Strategy without process is little more than a wish list, I will develop a sunny and specific strategy to attract the best customer to your business. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card shadow border-0 mb-4">
-                    <div class="card-body py-5">
-                        <div class="d-flex align-items-start">
-                            <div class="icon icon-shape icon-orange rounded-circle">
-                                <i class="fab fa-node-js"></i>
-                            </div>
-                            <div class="icon-text pl-4">
-                                <h5 class="font-weight-bold">Create Engaging</h5>
-                            </div>
-                        </div>
-                        <p class="mt-4">I will target the right audience, using the most appropriate design for your campaign but also A/B test the ads to determine which one has the best performance and interaction. </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card shadow border-0 mb-4">
-                    <div class="card-body py-5">
-                        <div class="d-flex align-items-start">
-                            <div class="icon icon-shape icon-teal rounded-circle">
-                                <i class="fas fa-thumbs-up"></i>
-                            </div>
-                            <div class="icon-text pl-4">
-                                <h5 class="font-weight-bold">Monitor and Optimize</h5>
-                            </div>
-                        </div>
-                        <p class="mt-4">Performance is a continuous process I will keep an eye every day to make sure the ads are getting the best result but also looking the best to improve it. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+        <?php
+
+        $rows = get_sub_field('section_features'); // get all rows
+
+          if($rows) {
+
+            echo '<div class="row">';
+
+            foreach($rows as $row) {
+              echo '<div class="col-lg-4">
+                  <div class="card shadow border-0 mb-4">
+                      <div class="card-body py-5">
+                          <div class="d-flex align-items-start">
+                              <div class="icon icon-shape icon-' . $row['feature_icon']['icon_color'] . ' rounded-circle">
+                                  ' . $row['feature_icon']['icon_code'] . '
+                              </div>
+                              <div class="icon-text pl-4">
+                                  <h5 class="font-weight-bold">' . $row['feature_title'] . '</h5>
+                              </div>
+                          </div>
+                          <p class="mt-4">' . $row['feature_description'] . '</p>
+                      </div>
+                  </div>
+              </div>';//.col-lg-4
+            }
+
+            echo '</div>'; //.row
+          }
+
+          ?>
+
+
     </div>
 </section>
