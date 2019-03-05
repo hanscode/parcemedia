@@ -4,9 +4,9 @@
     "fields": [
         {
             "key": "field_5bc49f19a02e9",
-            "label": "Social Media Consulting",
-            "name": "",
-            "type": "message",
+            "label": "Section Title",
+            "name": "consulting_section_title",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,9 +15,60 @@
                 "class": "",
                 "id": ""
             },
-            "message": "No fields to edit here. Simply adding this sectional will render the social icons that you'll have to work on. Over and out :)",
-            "new_lines": "wpautop",
-            "esc_html": 0
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c7d838f95a1f",
+            "label": "Section Description",
+            "name": "consulting_section_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_5c7d83bc95a20",
+            "label": "More Button",
+            "name": "consulting_more_button",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_5c7d83e495a21",
+            "label": "Action Button",
+            "name": "consulting_action_button",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -37,5 +88,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1551493199
+    "modified": 1551740500
 }

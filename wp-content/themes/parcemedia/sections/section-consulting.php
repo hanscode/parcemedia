@@ -3,15 +3,29 @@
     <div class="container text-center">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-white strong-600">Social Media Consulting</h1>
+              <?php if (get_sub_field('consulting_section_title')): ?>
+                <h1 class="text-white strong-600"><?php the_sub_field('consulting_section_title'); ?></h1>
+              <?php endif; ?>
+
                 <div class="row justify-content-center mt-4">
                     <div class="col-lg-8">
+                      <?php if (get_sub_field('consulting_section_description')): ?>
                         <p class="lead text-white">
-                          Starting with a detailed audit I will work collectively with your social media in-house team to set up goals, develop a strategic plan and execution to bring your social media channels to next level.
+                          <?php the_sub_field('consulting_section_description'); ?>
                         </p>
+                      <?php endif; ?>
                         <div class="btn-container mt-5">
-                            <a href="#" target="_blank" class="btn btn-white btn-circle btn-translate--hover px-4 mr-lg-4">Learn more</a>
-                            <a href="#" target="_blank" class="btn btn-warning btn-circle btn-translate--hover px-4">Let's work together</a>
+                          <?php
+                          $action_btn = get_sub_field('consulting_action_button');
+                          $more_btn = get_sub_field('consulting_more_button');
+                          ?>
+                          <?php if ($more_btn): ?>
+                            <a href="<?php echo $more_btn['url']; ?>" target="_blank" class="btn btn-white btn-circle btn-translate--hover px-4 mr-lg-4"><?php echo $more_btn['title']; ?></a>
+                          <?php endif; ?>
+                            <?php if ($action_btn): ?>
+                              <a href="<?php echo $action_btn['url']; ?>" target="_blank" class="btn btn-warning btn-circle btn-translate--hover px-4"><?php echo $action_btn['title']; ?></a>
+                            <?php endif; ?>
+
                         </div>
                     </div>
                 </div>

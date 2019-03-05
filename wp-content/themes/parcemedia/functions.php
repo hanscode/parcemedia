@@ -5,7 +5,8 @@ add_theme_support( 'menus' );
 
 //All menu additions
 require get_template_directory() . '/inc/navs.php';
-//require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/widgets.php';
+require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/helpers.php';
 
 // Add thumbnails support

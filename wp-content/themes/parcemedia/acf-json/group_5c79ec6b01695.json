@@ -57,7 +57,7 @@
             "placeholder": "",
             "maxlength": "",
             "rows": "",
-            "new_lines": ""
+            "new_lines": "br"
         },
         {
             "key": "field_5c7d7abc8e4e4",
@@ -74,7 +74,7 @@
             },
             "collapsed": "",
             "min": 0,
-            "max": 0,
+            "max": 6,
             "layout": "table",
             "button_label": "",
             "sub_fields": [
@@ -136,7 +136,7 @@
                             "label": "Icon Color",
                             "name": "icon_color",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "e.g. green, teal, orange, red.",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -191,5 +191,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1551728995
+    "modified": 1551740450
 }

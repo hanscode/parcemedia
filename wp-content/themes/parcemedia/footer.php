@@ -4,39 +4,31 @@
         <div class="row pt-md">
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <a href="../index.html">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/logo.svg" alt="Footer logo" style="height: 70px;">
+                  <?php if (get_theme_mod( 'parce_media_footer_logo' )): ?>
+                      <img src="<?php echo get_theme_mod( 'parce_media_footer_logo' );  ?>" alt="Footer logo" style="height: 70px;">
+                      <?php else: ?>
+                        <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/logo.svg" style="height: 70px;">
+                  <?php endif; ?>
+
                 </a>
-                <p class="text-sm mt-4">Through branding, digital marketing and strategic communications, Parece Media helps small businesses compete and win with expert strategy, powerful creative and award-winning websites, campaigns and digital experiences.</p>
+                <p class="text-sm mt-4"><?php echo get_theme_mod( 'text_setting' ); ?></p>
             </div>
-            <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
-                <h6 class="heading mb-3">Services</h6>
-                <ul class="list-unstyled">
-                    <li><a href="#">Consulting</a>
-                    </li>
-                    <li><a href="#">Coaching</a>
-                    </li>
-                    <li><a href="#">Ads Management</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
-                <h6 class="heading mb-3">About</h6>
-                <ul class="list-unstyled text-small">
-                    <li><a href="#">Blog</a>
-                    </li>
-                    <li><a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-2 col-sm-4 mb-5 mb-lg-0">
-                <h6 class="heading mb-3">Legal</h6>
-                <ul class="list-unstyled">
-                    <li><a href="#">Terms</a>
-                    </li>
-                    <li><a href="#">Privacy</a>
-                    </li>
-                </ul>
-            </div>
+
+                <?php if ( is_active_sidebar( 'first-footer-widget-area' ) ) : ?>
+                  <?php dynamic_sidebar( 'first-footer-widget-area' ); ?>
+                <?php endif; ?>
+                <!-- .first .widget-area -->
+
+                <?php if ( is_active_sidebar( 'second-footer-widget-area' ) ) : ?>
+                  <?php dynamic_sidebar( 'second-footer-widget-area' ); ?>
+                <?php endif; ?>
+                <!-- .second .widget-area -->
+
+                <?php if ( is_active_sidebar( 'third-footer-widget-area' ) ) : ?>
+                  <?php dynamic_sidebar( 'third-footer-widget-area' ); ?>
+                <?php endif; ?>
+                <!-- .third .widget-area -->
+
         </div>
         <div class="row align-items-center justify-content-md-between py-4 mt-4 delimiter-top">
             <div class="col-md-6">
@@ -46,26 +38,7 @@
             </div>
             <div class="col-md-6">
                 <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank">
-                            <i class="fab fa-dribbble"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
+                    <?php parce_media_social_links(); ?>
                 </ul>
             </div>
         </div>

@@ -4,9 +4,9 @@
     "fields": [
         {
             "key": "field_5c7ab4017c405",
-            "label": "Social Media Coaching",
-            "name": "",
-            "type": "message",
+            "label": "Section Title",
+            "name": "coach_section_title",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,9 +15,144 @@
                 "class": "",
                 "id": ""
             },
-            "message": "No fields to edit here. Simply adding this sectional will render the social icons that you'll have to work on. Over and out :)",
-            "new_lines": "wpautop",
-            "esc_html": 0
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c7d9701b16a3",
+            "label": "Section Description",
+            "name": "coach_section_description",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_5c7d9712b16a4",
+            "label": "Features List",
+            "name": "coach_features_list",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 6,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5c7d973bb16a5",
+                    "label": "Feature Title",
+                    "name": "coach_feature_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c7d9775b16a6",
+                    "label": "Feature Description",
+                    "name": "coach_feature_description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_5c7d9793b16a7",
+                    "label": "Feature Icon",
+                    "name": "coach_feature_icon",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c7d97abb16a8",
+                            "label": "Icon code",
+                            "name": "coach_icon_code",
+                            "type": "text",
+                            "instructions": "Font Awesome HTML code",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5c7d97cdb16a9",
+                            "label": "Icon color name",
+                            "name": "coach_icon_color",
+                            "type": "text",
+                            "instructions": "e.g. green, teal, orange, red.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "location": [
@@ -37,5 +172,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1551545371
+    "modified": 1551740463
 }

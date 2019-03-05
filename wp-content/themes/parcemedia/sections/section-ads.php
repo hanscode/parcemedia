@@ -29,7 +29,7 @@
             <?php endif; ?>
 
             <?php if (get_sub_field('ads_section_title')): ?>
-              <h3 class="mt-4">Social <strong class="font-weight-700"><?php the_sub_field('ads_section_title'); ?></strong></h3>
+              <h3 class="mt-4"><?php the_sub_field('ads_section_title'); ?></h3>
             <?php endif; ?>
 
             <?php if (get_sub_field('ads_section_description')): ?>

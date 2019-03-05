@@ -45,15 +45,7 @@
                 </div>
                 <div class="ml-auto">
                     <ul class="nav">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
-                        </li>
+                        <?php parce_media_social_links(); ?>
                     </ul>
                 </div>
             </div>
@@ -70,7 +62,12 @@
         <div class="container">
             <a class="navbar-brand mr-lg-5" href="<?php bloginfo('url'); ?>">
               <?php if ($nav && $nav = 'dark'): ?>
-                <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/logo.svg" style="height: 50px;">
+                    <?php if (get_theme_mod( 'parce_media_logo' )): ?>
+                      <img alt="Image placeholder" src="<?php echo get_theme_mod( 'parce_media_logo' );  ?>" style="height: 50px;">
+                      <?php else: ?>
+                        <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/logo.svg" style="height: 50px;">
+                    <?php endif; ?>
+
               <?php else : ?>
                 <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/brand/logo-dark.svg" style="height: 50px;">
               <?php endif; ?>
