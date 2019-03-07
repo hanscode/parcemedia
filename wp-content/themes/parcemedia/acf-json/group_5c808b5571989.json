@@ -1,0 +1,43 @@
+{
+    "key": "group_5c808b5571989",
+    "title": "Section: Contact Form",
+    "fields": [
+        {
+            "key": "field_5c808b5efe5b8",
+            "label": "Contact form shortcode",
+            "name": "contact_form_shortcode",
+            "type": "text",
+            "instructions": "Paste here the CF7 shortcode, e.g., [contact-form-7 id=\"223\" title=\"Your form\"]",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1551928226
+}

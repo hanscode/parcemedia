@@ -325,6 +325,68 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5c8088e23067e": {
+                    "key": "layout_5c8088e23067e",
+                    "name": "google_map",
+                    "label": "Google Map",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c8088ec3067f",
+                            "label": "Section: Google Map",
+                            "name": "section:_google_map",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c808838d51da"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c808bb8b8261": {
+                    "key": "layout_5c808bb8b8261",
+                    "name": "contact_form",
+                    "label": "Contact Form",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c808bc5b8262",
+                            "label": "Section: Contact form",
+                            "name": "section:_contact_form",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c808b5571989"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Section",
@@ -349,5 +411,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1551925255
+    "modified": 1551928303
 }

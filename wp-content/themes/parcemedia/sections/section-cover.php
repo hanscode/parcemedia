@@ -106,11 +106,11 @@
 <?php endif; ?>
 
 <!-- Contact Cover -->
-<?php if (get_sub_field('cover_type') == 'contact'): ?>
-  <?php
+<?php if (get_sub_field('cover_type') == 'contact'):
   $image = get_sub_field('cover_background');
   $action_link = get_sub_field('action_btn_link');
   ?>
+
     <section class="spotlight bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-image: url('<?php echo $image['url']; ?>');">
         <span class="mask bg-gradient-primary opacity-9"></span>
         <div class="spotlight-holder">
