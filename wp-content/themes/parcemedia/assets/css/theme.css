@@ -21736,23 +21736,51 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     margin-left: 10px;
 }
 
-.section-rotate .btn-dark
+.section-rotate .btn-dark,
+.section-about .btn-dark
 {
-    color: #fff;
+    color: #fff; 
     border-color: #d40c4a;
     background-color: #d40c4a;
     box-shadow: none;
 }
-.section-rotate .btn-dark:hover
+.section-rotate .btn-dark:hover,
+.section-about .btn-dark:hover
 {
-    border-color: #ff9500;
+    border-color: #ff9500; 
     background-color: #ff9500;
 }
 
 .btn-dark:hover
 {
-    border-color: #d40c4a;
+    border-color: #d40c4a; 
     background-color: #d40c4a;
+}
+
+.bg-black-color
+{
+    color: #fff; 
+    background-color: #000;
+}
+
+.service-item
+{
+    display: none;
+}
+
+.service-inner
+{
+    display: inline-block;
+}
+
+.home .service-item
+{
+    display: inline-block;
+}
+
+.home .service-inner
+{
+    display: none;
 }
 
 .admin-bar header

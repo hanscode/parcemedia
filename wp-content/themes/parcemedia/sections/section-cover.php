@@ -1,3 +1,5 @@
+<?php if (get_sub_field('cover_type') == 'home'): ?>
+
 <section class="section-rotate">
     <div class="section-inner bg-gradient-primary"></div>
     <!--Illustation -->
@@ -66,3 +68,66 @@
         </div>
     </div>
 </section>
+
+<?php endif; ?>
+
+<!-- About Cover -->
+<?php if (get_sub_field('cover_type') == 'about'): ?>
+
+  <?php
+  $image = get_sub_field('cover_background');
+  $action_link = get_sub_field('action_btn_link');
+  ?>
+  <!-- Spotlight -->
+  <section class="slice bg-cover bg-size--cover section-about" style="background-image: url('<?php echo $image['url']; ?>');">
+      <span class="mask bg-gradient-primary opacity-9"></span>
+      <div class="container d-flex align-items-center px-0 py-lg">
+          <div class="col">
+              <div class="row row-grid">
+                  <div class="col-lg-7">
+                      <div class="py-5">
+                          <h1 class="text-white mb-4"><?php the_sub_field('cover_title'); ?></h1>
+                          <p class="lead text-white lh-180"><?php the_sub_field('cover_legend'); ?></p>
+                          <div class="mt-5">
+                            <?php if ($action_link): ?>
+                              <a href="<?php echo esc_url($action_link['url']); ?>" class="btn btn-dark btn-circle btn-translate--hover btn-icon mr-sm-4 scroll-me">
+                                  <span class="btn-inner--text"><?php echo esc_html($action_link['title']); ?></span>
+                                  <span class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
+                              </a>
+                              <?php endif; ?>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+<?php endif; ?>
+
+<!-- Contact Cover -->
+<?php if (get_sub_field('cover_type') == 'contact'): ?>
+  <?php
+  $image = get_sub_field('cover_background');
+  $action_link = get_sub_field('action_btn_link');
+  ?>
+    <section class="spotlight bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-image: url('<?php echo $image['url']; ?>');">
+        <span class="mask bg-gradient-primary opacity-9"></span>
+        <div class="spotlight-holder">
+            <div class="container d-flex align-items-center pt-lg pt-lg-0">
+                <div class="col py-lg">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <h1 class="text-white"><?php the_sub_field('cover_title'); ?></h1>
+                            <p class="lead text-white mt-4"><?php the_sub_field('cover_legend'); ?></p>
+                            <a href="<?php echo esc_url($action_link['url']); ?>" class="btn btn-secondary btn-circle btn-icon btn-translate--hover mt-4 scroll-me">
+                                <span class="btn-inner--icon"><i class="fas fa-pencil-alt"></i></span>
+                                <span class="btn-inner--text"><?php echo esc_html($action_link['title']); ?></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>

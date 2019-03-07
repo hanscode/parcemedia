@@ -1,21 +1,49 @@
 // Add your custom styles below
-.section-rotate {
+%btn-dark-action {
   .btn-dark {
-    color: #fff;
-    border-color: #d40c4a;
-    background-color: #d40c4a;
+    background-color: $btn-color-pink;
+    border-color: $btn-color-pink;
     box-shadow: none;
+    color: #fff;
 
     &:hover {
-      border-color: #ff9500;
-      background-color: #ff9500;
+      background-color: $btn-color-orange;
+      border-color: $btn-color-orange;
     }
   }
+}
+.section-rotate {
+  @extend %btn-dark-action;
+}
+
+.section-about {
+  @extend %btn-dark-action;
 }
 
 .btn-dark {
   &:hover {
-    border-color: #d40c4a;
     background-color: #d40c4a;
+    border-color: #d40c4a;
+  }
+}
+
+.bg-black-color {
+  background-color: $bg-color-black;
+  color: $white;
+}
+
+.service-item {
+  display: none;
+}
+.service-inner {
+  display: inline-block;
+}
+
+.home {
+  .service-item {
+    display: inline-block;
+  }
+  .service-inner {
+    display: none;
   }
 }
