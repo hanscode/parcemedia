@@ -21783,6 +21783,28 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     display: none;
 }
 
+ul.comment-list
+{
+    list-style: none;
+}
+
+.comment-meta
+{
+    padding: 10px 0;
+
+    background-color: #fafbfe;
+}
+
+.comment-content p
+{
+    padding: 0;
+}
+
+.edit-link a
+{
+    color: #d40c4a;
+}
+
 .admin-bar header
 {
     top: 32px;

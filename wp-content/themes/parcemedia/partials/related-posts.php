@@ -1,9 +1,9 @@
 <section class="slice slice-lg bg-secondary" data-delimiter-before="1" data-delimiter-after="1">
     <div class="container">
         <div class="mb-md text-center">
-            <h3 class="heading h2">Latest from the blog</h3>
+            <h3 class="heading h2">More from the blog</h3>
             <div class="fluid-paragraph mt-3">
-                <p class="lead">Start building fast, beautiful and modern looking websites in no time using our theme.</p>
+                <p class="lead">This is not all, there are more for you.</p>
             </div>
         </div>
 
