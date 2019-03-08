@@ -131,3 +131,40 @@
         </div>
     </section>
 <?php endif; ?>
+
+<?php if (get_sub_field('cover_type') == 'blog'): ?>
+
+  <?php
+  $recent_posts = wp_get_recent_posts(array(
+    'numberposts' => 1, // Number of recent posts thumbnails to display
+    'post_status' => 'publish' // Show only the published posts
+  ));
+  foreach($recent_posts as $recent) : ?>
+
+<section class="spotlight bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-image: url('<?php echo get_the_post_thumbnail_url($recent['ID'], 'full'); ?>');">
+    <div class="spotlight-holder">
+        <span class="mask bg-gradient-primary opacity-6"></span>
+        <div class="container py-md d-flex align-items-center pt-lg">
+            <div class="col pt-md pt-lg-0">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-7 text-center">
+
+                        <h1 class="text-white lh-150 mb-4"><?php echo $recent['post_title']; ?></h1>
+                        <ul class="list-inline">
+                            <li class="list-inline-item text-white"><?php echo date( 'F j, Y', strtotime( $recent['post_date'] ) ); ?></li>
+                            <li class="list-inline-item text-white">Written by <?php the_author_meta( 'display_name', $recent['post_author'] ); ?></li>
+                        </ul>
+                        <span class="clearfix"></span>
+                        <a href="<?php echo esc_url( get_permalink( $recent['ID'] ) ); ?>" class="btn btn-white btn-circle btn-icon mt-4">
+                            <span class="btn-inner--text">Continue reading</span>
+                            <span class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<?php endforeach; wp_reset_query(); ?>
+<?php endif; ?>

@@ -387,6 +387,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5c81d22aed8e3": {
+                    "key": "layout_5c81d22aed8e3",
+                    "name": "blog",
+                    "label": "Blog",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c81d232ed8e4",
+                            "label": "Section: Blog",
+                            "name": "section:_blog",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c81abf626f35"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Section",
@@ -411,5 +442,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1551928303
+    "modified": 1552011941
 }

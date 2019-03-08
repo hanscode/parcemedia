@@ -20,7 +20,7 @@
   <?php $nav = get_field('select_a_navbar'); ?>
 
     <!-- Topbar -->
-    <?php if ($nav && $nav = 'dark'): ?>
+    <?php if ($nav && $nav == 'dark'): ?>
       <div id="navbar-top-main" class="navbar-top navbar-dark bg-dark border-bottom">
       <?php else : ?>
       <div id="navbar-top-main" class="navbar-top navbar-light bg-white border-bottom">
@@ -54,14 +54,14 @@
 
 
     <!-- Main navbar -->
-    <?php if ($nav && $nav = 'dark'): ?>
+    <?php if ($nav && $nav == 'dark'): ?>
       <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-dark bg-dark" id="navbar-main">
       <?php else : ?>
         <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-transparent navbar-light bg-white" id="navbar-main">
     <?php endif; ?>
         <div class="container">
             <a class="navbar-brand mr-lg-5" href="<?php bloginfo('url'); ?>">
-              <?php if ($nav && $nav = 'dark'): ?>
+              <?php if ($nav && $nav == 'dark'): ?>
                     <?php if (get_theme_mod( 'parce_media_logo' )): ?>
                       <img alt="Image placeholder" src="<?php echo get_theme_mod( 'parce_media_logo' );  ?>" style="height: 50px;">
                       <?php else: ?>

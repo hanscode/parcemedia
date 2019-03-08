@@ -35,6 +35,7 @@
     <?php endif; ?>
     <!-- Load more -->
     <div class="mt-lg text-center">
+      <?php load_more_button(); ?>
         <!--<a href="#" class="btn btn-dark btn-circle shadow">Load more</a>-->
     </div>
     </div><!--/.container-->

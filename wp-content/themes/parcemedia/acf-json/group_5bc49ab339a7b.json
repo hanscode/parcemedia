@@ -18,7 +18,8 @@
             "choices": {
                 "home": "Home",
                 "about": "About",
-                "contact": "Contact"
+                "contact": "Contact",
+                "blog": "Blog"
             },
             "allow_null": 0,
             "other_choice": 0,
@@ -73,7 +74,15 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8010737d6a3",
+                        "operator": "!=",
+                        "value": "blog"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -119,7 +128,15 @@
             "type": "textarea",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8010737d6a3",
+                        "operator": "!=",
+                        "value": "blog"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -138,7 +155,15 @@
             "type": "link",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8010737d6a3",
+                        "operator": "!=",
+                        "value": "blog"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -187,5 +212,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1551903909
+    "modified": 1552012073
 }
