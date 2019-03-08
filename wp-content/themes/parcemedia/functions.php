@@ -8,6 +8,7 @@ require get_template_directory() . '/inc/navs.php';
 require get_template_directory() . '/inc/widgets.php';
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/helpers.php';
+require get_template_directory() . '/inc/custom-comments.php';
 
 // Add thumbnails support
 add_theme_support( 'post-thumbnails' );

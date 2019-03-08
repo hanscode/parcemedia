@@ -3,13 +3,86 @@
     "title": "Section: Cover",
     "fields": [
         {
+            "key": "field_5c8010737d6a3",
+            "label": "Cover type",
+            "name": "cover_type",
+            "type": "radio",
+            "instructions": "Select a cover area",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "home": "Home",
+                "about": "About",
+                "contact": "Contact",
+                "blog": "Blog"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5c802a3976657",
+            "label": "Cover Background",
+            "name": "cover_background",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8010737d6a3",
+                        "operator": "==",
+                        "value": "about"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5c8010737d6a3",
+                        "operator": "==",
+                        "value": "contact"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_5bc49ab33e6fb",
             "label": "Title",
             "name": "cover_title",
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8010737d6a3",
+                        "operator": "!=",
+                        "value": "blog"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -28,7 +101,15 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8010737d6a3",
+                        "operator": "==",
+                        "value": "home"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -47,7 +128,15 @@
             "type": "textarea",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8010737d6a3",
+                        "operator": "!=",
+                        "value": "blog"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -66,7 +155,15 @@
             "type": "link",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8010737d6a3",
+                        "operator": "!=",
+                        "value": "blog"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -81,7 +178,15 @@
             "type": "link",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8010737d6a3",
+                        "operator": "==",
+                        "value": "home"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -107,5 +212,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1551711907
+    "modified": 1552012073
 }

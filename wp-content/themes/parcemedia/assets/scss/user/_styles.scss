@@ -1,21 +1,87 @@
 // Add your custom styles below
-.section-rotate {
+
+//Minxis
+// Mixin to prefix a property
+// @param {String} $property - Property name
+// @param {*} $value - Property value
+// @param {List} $prefixes (()) - List of prefixes to print
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
+}
+
+//Extendes
+%btn-dark-action {
   .btn-dark {
-    color: #fff;
-    border-color: #d40c4a;
-    background-color: #d40c4a;
+    background-color: $btn-color-pink;
+    border-color: $btn-color-pink;
     box-shadow: none;
+    color: #fff;
 
     &:hover {
-      border-color: #ff9500;
-      background-color: #ff9500;
+      background-color: $btn-color-orange;
+      border-color: $btn-color-orange;
     }
   }
+}
+.section-rotate {
+  @extend %btn-dark-action;
+}
+
+.section-about {
+  @extend %btn-dark-action;
 }
 
 .btn-dark {
   &:hover {
-    border-color: #d40c4a;
     background-color: #d40c4a;
+    border-color: #d40c4a;
+  }
+}
+
+.bg-black-color {
+  background-color: $bg-color-black;
+  color: $white;
+}
+
+.service-item {
+  display: none;
+}
+.service-inner {
+  display: inline-block;
+}
+
+.home {
+  .service-item {
+    display: inline-block;
+  }
+  .service-inner {
+    display: none;
+  }
+}
+
+ul {
+  &.comment-list {
+    list-style: none;
+  }
+}
+
+.comment-meta {
+  padding: 10px 0;
+  background-color: #fafbfe;
+}
+
+.comment-content {
+  p {
+    padding: 0;
+  }
+}
+
+.edit-link {
+  a {
+    color: $btn-color-pink; 
   }
 }

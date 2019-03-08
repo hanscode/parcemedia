@@ -1,3 +1,5 @@
+<?php if (get_sub_field('cover_type') == 'home'): ?>
+
 <section class="section-rotate">
     <div class="section-inner bg-gradient-primary"></div>
     <!--Illustation -->
@@ -66,3 +68,103 @@
         </div>
     </div>
 </section>
+
+<?php endif; ?>
+
+<!-- About Cover -->
+<?php if (get_sub_field('cover_type') == 'about'): ?>
+
+  <?php
+  $image = get_sub_field('cover_background');
+  $action_link = get_sub_field('action_btn_link');
+  ?>
+  <!-- Spotlight -->
+  <section class="slice bg-cover bg-size--cover section-about" style="background-image: url('<?php echo $image['url']; ?>');">
+      <span class="mask bg-gradient-primary opacity-9"></span>
+      <div class="container d-flex align-items-center px-0 py-lg">
+          <div class="col">
+              <div class="row row-grid">
+                  <div class="col-lg-7">
+                      <div class="py-5">
+                          <h1 class="text-white mb-4"><?php the_sub_field('cover_title'); ?></h1>
+                          <p class="lead text-white lh-180"><?php the_sub_field('cover_legend'); ?></p>
+                          <div class="mt-5">
+                            <?php if ($action_link): ?>
+                              <a href="<?php echo esc_url($action_link['url']); ?>" class="btn btn-dark btn-circle btn-translate--hover btn-icon mr-sm-4 scroll-me">
+                                  <span class="btn-inner--text"><?php echo esc_html($action_link['title']); ?></span>
+                                  <span class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
+                              </a>
+                              <?php endif; ?>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+<?php endif; ?>
+
+<!-- Contact Cover -->
+<?php if (get_sub_field('cover_type') == 'contact'):
+  $image = get_sub_field('cover_background');
+  $action_link = get_sub_field('action_btn_link');
+  ?>
+
+    <section class="spotlight bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-image: url('<?php echo $image['url']; ?>');">
+        <span class="mask bg-gradient-primary opacity-9"></span>
+        <div class="spotlight-holder">
+            <div class="container d-flex align-items-center pt-lg pt-lg-0">
+                <div class="col py-lg">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <h1 class="text-white"><?php the_sub_field('cover_title'); ?></h1>
+                            <p class="lead text-white mt-4"><?php the_sub_field('cover_legend'); ?></p>
+                            <a href="<?php echo esc_url($action_link['url']); ?>" class="btn btn-secondary btn-circle btn-icon btn-translate--hover mt-4 scroll-me">
+                                <span class="btn-inner--icon"><i class="fas fa-pencil-alt"></i></span>
+                                <span class="btn-inner--text"><?php echo esc_html($action_link['title']); ?></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php endif; ?>
+
+<?php if (get_sub_field('cover_type') == 'blog'): ?>
+
+  <?php
+  $recent_posts = wp_get_recent_posts(array(
+    'numberposts' => 1, // Number of recent posts thumbnails to display
+    'post_status' => 'publish' // Show only the published posts
+  ));
+  foreach($recent_posts as $recent) : ?>
+
+<section class="spotlight bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-image: url('<?php echo get_the_post_thumbnail_url($recent['ID'], 'full'); ?>');">
+    <div class="spotlight-holder">
+        <span class="mask bg-gradient-primary opacity-6"></span>
+        <div class="container py-md d-flex align-items-center pt-lg">
+            <div class="col pt-md pt-lg-0">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-md-7 text-center">
+
+                        <h1 class="text-white lh-150 mb-4"><?php echo $recent['post_title']; ?></h1>
+                        <ul class="list-inline">
+                            <li class="list-inline-item text-white"><?php echo date( 'F j, Y', strtotime( $recent['post_date'] ) ); ?></li>
+                            <li class="list-inline-item text-white">Written by <?php the_author_meta( 'display_name', $recent['post_author'] ); ?></li>
+                        </ul>
+                        <span class="clearfix"></span>
+                        <a href="<?php echo esc_url( get_permalink( $recent['ID'] ) ); ?>" class="btn btn-white btn-circle btn-icon mt-4">
+                            <span class="btn-inner--text">Continue reading</span>
+                            <span class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<?php endforeach; wp_reset_query(); ?>
+<?php endif; ?>

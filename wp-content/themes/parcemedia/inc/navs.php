@@ -85,7 +85,7 @@ function add_class_to_get_started_item( $atts, $item, $args ) {
    $navbar = get_field('select_a_navbar');
     // check if the item is set title="get-started"
     if ( $atts['title'] == 'get-started' && $args->theme_location == 'secondary-menu' ) {
-      if ($navbar && $navbar = 'dark') {
+      if ($navbar && $navbar == 'dark') {
         // add the desired attributes:
         $atts['class'] = 'btn btn-sm btn-white btn-circle btn-icon d-none d-lg-inline-flex scroll-me';
       } else {
@@ -103,7 +103,11 @@ function prefix_nav_title( $item_output, $item, $depth, $args ) {
     if ( !empty( $item->description ) ) {
         $item_output = str_replace(
           '">' . $args->link_before . $item->title, '">'
-          . $args->link_before . '<div class="media d-flex align-items-center"><div class="media-body ml-3"><h6 class="mb-1">'
+          . $args->link_before . '
+          <div class="media d-flex align-items-center">
+          <img alt="Image placeholder" src="'. get_template_directory_uri() .'/assets/img/icons/dusk/svg/'. $item->attr_title .'.svg" class="img-saturate" style="width: 50px;">
+          <div class="media-body ml-3">
+          <h6 class="mb-1">'
           . $item->title, $item_output );
     }
 
