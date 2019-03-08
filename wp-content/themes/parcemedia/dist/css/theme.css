@@ -21783,12 +21783,6 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     display: none;
 }
 
-.consulting-icon
-{
-    background-image: url('../../assets/img/icons/dusk/svg/browser-window.svg');
-    background-repeat: no-repeat;
-}
-
 .admin-bar header
 {
     top: 32px;
@@ -21807,4 +21801,245 @@ main
 ul.sub-menu
 {
     list-style: none;
+}
+
+.alignnone
+{
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter.aligncenter,
+div.aligncenter
+{
+    display: block;
+}
+
+.alignright
+{
+    float: right;
+
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft
+{
+    float: left;
+
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright
+{
+    float: right;
+
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone
+{
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft
+{
+    float: left;
+
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter
+{
+    display: block;
+
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+.wp-caption
+{
+    max-width: 96%;
+
+    text-align: left; 
+
+    background: #fff;
+}
+.wp-caption .alignnone
+{
+    margin: 5px 20px 20px 0;
+}
+.wp-caption .alignleft
+{
+    margin: 5px 20px 20px 0;
+}
+.wp-caption .alignright
+{
+    margin: 5px 0 20px 20px;
+}
+.wp-caption img
+{
+    width: auto; 
+    max-width: 98.5%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    border: 0 none;
+    border-radius: .25rem;
+}
+.wp-caption p .wp-caption-text
+{
+    font-size: 11px;
+    line-height: 17px;
+
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+.screen-reader-text
+{
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    word-wrap: normal; 
+
+    border: 0;
+
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+}
+.screen-reader-text:focus
+{
+    font-size: 1em;
+    line-height: normal;
+
+    z-index: 100000; 
+    top: 5px;
+    left: 5px;
+
+    display: block;
+    clip: auto;
+
+    width: auto;
+    height: auto;
+    padding: 15px 23px 14px;
+
+    text-decoration: none;
+
+    color: #002042;
+    background-color: #eee;
+
+    -webkit-clip-path: none;
+            clip-path: none;
+}
+
+blockquote
+{
+    font-size: 1.3em;
+    font-weight: 700;
+    font-style: italic;
+
+    position: relative;
+    top: 10px; 
+
+    margin: 10px 0 40px;
+    padding: 8px 10px 0 20px;
+
+    border-left: 4px solid #002042;
+}
+blockquote small
+{
+    font-size: 13px;
+    line-height: 20px; 
+
+    letter-spacing: .005em;
+
+    color: #adb5bd;
+}
+
+.tiled-gallery .gallery-row
+{
+    margin: 0 auto;
+}
+
+.gallery
+{
+    margin: 0 auto 18px;
+}
+.gallery .gallery-item
+{
+    float: left;
+
+    width: 33%; 
+    margin-top: 0;
+
+    text-align: center;
+}
+.gallery .gallery-item img
+{
+    border: 0;
+}
+.gallery img
+{
+    padding: 0; 
+
+    border: 1px solid #fff;
+    background: #fff;
+    box-shadow: none;
+}
+.gallery img:hover
+{
+    background: #fff;
+}
+.gallery .gallery-caption
+{
+    font-size: 12px;
+
+    margin: 5px 0 12px; 
+
+    color: #6c7686;
+}
+.gallery dl,
+.gallery dt
+{
+    margin: 0;
+}
+.gallery br + br
+{
+    display: none;
+}
+
+.gallery-columns-2 .gallery-item
+{
+    width: 50%;
+}
+
+.gallery-columns-2 .attachment-medium
+{
+    max-width: 92%; 
+    height: auto;
+}
+
+.gallery-columns-4 .gallery-item
+{
+    width: 25%;
+}
+
+.gallery-columns-4 .attachment-thumbnail
+{
+    max-width: 84%; 
+    height: auto;
+}
+
+figcaption
+{
+    padding: 10px 0 0; 
+
+    color: #6c7686;
 }
