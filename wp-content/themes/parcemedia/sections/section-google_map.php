@@ -1,5 +1,6 @@
 <section>
-    <div id="map-canvas" class="map-canvas" data-lat="37.7767964" data-lng="-122.4187928"></div>
+  <?php $coordinates = get_sub_field('data_ coordinates'); ?>
+    <div id="map-canvas" class="map-canvas" data-lat="<?php echo $coordinates['latitude'];  ?>" data-lng="<?php echo $coordinates['longitude']; ?>"></div>
 </section>
 
 <!-- Page plugins -->
