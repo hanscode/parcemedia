@@ -1,0 +1,79 @@
+{
+    "key": "group_5c855adb35905",
+    "title": "Additional Code",
+    "fields": [
+        {
+            "key": "field_5c855aee73b31",
+            "label": "Note",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "These options are for advanced users only, so use it with caution.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5c855c3a73b32",
+            "label": "Google Analytics tracking code",
+            "name": "tracking_code",
+            "type": "textarea",
+            "instructions": "Paste your Google Analytics tracking code (or any other JavaScript related tracking code)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Note: Please use code with \"script\" tags included",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_5c855c9373b33",
+            "label": "Additional JavaScript",
+            "name": "additional_javascript",
+            "type": "textarea",
+            "instructions": "Use this field to add JavaScript code.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Note: Please use clean execution JavaScript code without \"script\" tags",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1552263687
+}

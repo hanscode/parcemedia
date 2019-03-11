@@ -91,8 +91,7 @@ function change_submit_button($submit_field)
 add_filter('comment_form_submit_field', 'change_submit_button');
 
 function parce_media_comment_form_title ($arg) {
-
-$arg['title_reply'] = __('Add you comment');
+$arg['title_reply'] = __('Add comment');
 return $arg;
 }
 add_filter('comment_form_defaults','parce_media_comment_form_title');

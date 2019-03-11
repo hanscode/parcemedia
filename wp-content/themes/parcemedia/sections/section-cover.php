@@ -139,7 +139,13 @@
     'numberposts' => 1, // Number of recent posts thumbnails to display
     'post_status' => 'publish' // Show only the published posts
   ));
-  foreach($recent_posts as $recent) : ?>
+  foreach($recent_posts as $recent) :
+    $more_title = get_field_object('field_5c84804ee8eec');
+    $written_by_title = get_field_object('field_5c8483aad7ba1');
+    $translation = get_field('enable_theme_translation', 'option');
+    ?>
+
+
 
 <section class="spotlight bg-cover bg-size--cover" data-spotlight="fullscreen" style="background-image: url('<?php echo get_the_post_thumbnail_url($recent['ID'], 'full'); ?>');">
     <div class="spotlight-holder">
@@ -152,11 +158,23 @@
                         <h1 class="text-white lh-150 mb-4"><?php echo $recent['post_title']; ?></h1>
                         <ul class="list-inline">
                             <li class="list-inline-item text-white"><?php echo date( 'F j, Y', strtotime( $recent['post_date'] ) ); ?></li>
-                            <li class="list-inline-item text-white">Written by <?php the_author_meta( 'display_name', $recent['post_author'] ); ?></li>
+                            <li class="list-inline-item text-white">
+                              <?php if ( $translation == 'on' && get_field('written_by', 'option')): ?>
+                                <?php the_field('written_by', 'option'); ?>
+                              <?php else: ?>
+                                <?php echo $written_by_title['label'] ?>
+                              <?php endif; ?>
+                              <?php the_author_meta( 'display_name', $recent['post_author'] ); ?></li>
                         </ul>
                         <span class="clearfix"></span>
                         <a href="<?php echo esc_url( get_permalink( $recent['ID'] ) ); ?>" class="btn btn-white btn-circle btn-icon mt-4">
-                            <span class="btn-inner--text">Continue reading</span>
+                            <span class="btn-inner--text">
+                              <?php if ( $translation == 'on' && get_field('read_more', 'option')): ?>
+                                <?php the_field('read_more', 'option'); ?>
+                              <?php else: ?>
+                                  <?php echo $more_title['label'] ?>
+                              <?php endif; ?>
+                            </span>
                             <span class="btn-inner--icon"><i class="fas fa-angle-right"></i></span>
                         </a>
                     </div>

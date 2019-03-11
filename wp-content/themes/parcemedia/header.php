@@ -10,6 +10,7 @@
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/brand/favicon.png" type="image/png">
 
     <?php wp_head(); ?>
+    <?php the_field('tracking_code', 'option'); ?>
 
   </head>
 
@@ -31,15 +32,35 @@
                 <div>
                     <ul class="nav">
                         <li class="nav-item dropdown ml-lg-2 dropdown-animate" data-toggle="hover">
+                          <?php
+                            $en_redirect = get_field('english_redirection', 'option');
+                            $es_redirect = get_field('spanish_redirection', 'option');
+                          ?>
+                          <?php if (get_field('site_language', 'option') == 'en_US'): ?>
                             <a class="nav-link px-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/flags/us.svg">
-                                <span class="d-none d-lg-inline-block">United States</span>
+                                <span class="d-none d-lg-inline-block">EN</span>
                                 <span class="d-lg-none">EN</span>
                             </a>
+                          <?php elseif (get_field('site_language', 'option') == 'es_ES'): ?>
+                            <a class="nav-link px-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/flags/es.svg">
+                                <span class="d-none d-lg-inline-block">ES</span>
+                                <span class="d-lg-none">ES</span>
+                            </a>
+                          <?php endif; ?>
+
+                            <?php if (get_field('site_language', 'option') == 'en_US'): ?>
                             <div class="dropdown-menu dropdown-menu-sm dropdown-menu-arrow">
-                                <a href="" class="dropdown-item">
-                                    <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/flags/es.svg">Spanish</a>
+                                <a href="<?php echo $es_redirect['spanish_site_url']; ?>" class="dropdown-item">
+                                    <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/flags/es.svg"><?php echo $es_redirect['spanish_site_title']; ?></a>
                             </div>
+                            <?php elseif (get_field('site_language', 'option') == 'es_ES'): ?>
+                              <div class="dropdown-menu dropdown-menu-sm dropdown-menu-arrow">
+                                  <a href="<?php echo $en_redirect['english_site_url']; ?>" class="dropdown-item">
+                                      <img alt="Image placeholder" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/flags/us.svg"><?php echo $en_redirect['english_site_title']; ?></a>
+                              </div>
+                            <?php endif; ?>
                         </li>
                     </ul>
                 </div>

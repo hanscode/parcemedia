@@ -1,5 +1,28 @@
 //WordPress Generated Classes
 
+%input-style {
+  background-color: #fff;
+  background-clip: padding-box;
+  border: .0625rem solid #ced4da;
+  border-radius: .25rem;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  color: #495057;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.7;
+  padding: .625rem 1.1rem;
+  transition: all .2s ease-in-out;
+  width: 100%;
+
+  &:focus {
+    color: #495057;
+    outline: 0;
+    border-color: rgba(0,32,66,.5);
+    background-color: $white;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 20px rgba(0,32,66,.1);
+  }
+}
+
 .alignnone {
   margin: 5px 20px 20px 0;
 }
@@ -67,7 +90,7 @@ a {
 
   img {
     @include prefix(border-radius, .25rem, webkit moz);
-    
+
     border: 0 none;
     height: auto;
     margin: 0;
@@ -114,24 +137,6 @@ a {
     top: 5px;
     width: auto;
     z-index: 100000;
-  }
-}
-
-blockquote {
-  border-left: 4px solid $brand-color;
-  font-style: italic;
-  font-size: 1.3em;
-  font-weight: 700;
-  margin: 10px 0 40px;
-  padding: 8px 10px 0 20px;
-  position: relative;
-  top: 10px;
-
-  small {
-    color: $gray-500;
-    font-size: 13px;
-    letter-spacing: .005em;
-    line-height: 20px;
   }
 }
 
@@ -210,4 +215,58 @@ blockquote {
 figcaption {
   color: $gray-600;
   padding: 10px 0 0;
+}
+
+//Comment form styles
+
+textarea {
+  &#comment {
+      @extend %input-style;
+      height: calc(7.95rem + .225rem);
+  }
+}
+
+input {
+  &#author {
+    @extend %input-style;
+    height: calc(2.95rem + .125rem);
+  }
+
+  &#email {
+    @extend %input-style;
+    height: calc(2.95rem + .125rem);
+  }
+
+  &#url {
+    @extend %input-style;
+    height: calc(2.95rem + .125rem);
+  }
+
+  &#submit {
+    color: $white;
+    border-color: $primary;
+    background-color: $primary;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding: .95rem 1rem;
+    border-radius: .375rem;
+    cursor: pointer;
+    width: 100%;
+
+    &:hover {
+      background-color: $bg-color-black;
+    }
+  }
+}
+
+.comment-form-cookies-consent {
+  label {
+    margin-left: 10px;
+  }
+}
+
+.comment-author {
+  img {
+    @include prefix(border-radius, 50%, webkit moz);
+  }
 }

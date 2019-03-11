@@ -1,9 +1,31 @@
 <section class="slice slice-lg bg-secondary" data-delimiter-before="1" data-delimiter-after="1">
     <div class="container">
         <div class="mb-md text-center">
-            <h3 class="heading h2">More from the blog</h3>
+            <h3 class="heading h2">
+              <?php
+                $related_title = get_field_object('field_5c8482abd7b9e');
+                $related_description = get_field_object('field_5c8482c0d7b9f');
+                $translation = get_field('enable_theme_translation', 'option');
+
+                if ($translation == 'on' && get_field('you_may_also_like', 'option')):
+              ?>
+              <?php the_field('you_may_also_like', 'option'); ?>
+
+              <?php else: ?>
+
+                <?php echo $related_title['label'] ?>
+
+              <?php endif; ?>
+              </h3>
             <div class="fluid-paragraph mt-3">
-                <p class="lead">This is not all, there are more for you.</p>
+
+                <p class="lead">
+                  <?php if ( $translation == 'on' && get_field('related_post_description', 'option')): ?>
+                      <?php the_field('related_post_description', 'option'); ?>
+                  <?php else: ?>
+                      <?php echo $related_description['label'] ?>
+                  <?php endif; ?>
+                </p>
             </div>
         </div>
 
@@ -28,7 +50,7 @@
                         <img alt="Image placeholder" src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'full')); ?>" class="card-img-top">
                         <div class="card-body py-5 text-center">
                             <a href="<?php the_permalink(); ?>" class="h5 lh-150"><?php the_title(); ?></a>
-                            <h6 class="text-muted mt-4 mb-0"><?php echo get_the_date('F j, Y'); ?></h6>
+                            <h6 class="text-muted mt-4 mb-0 text-capitalize"><?php echo get_the_date('F j, Y'); ?></h6>
                         </div>
                     </div>
                 </div>

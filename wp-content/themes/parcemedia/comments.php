@@ -10,21 +10,21 @@
  if ( post_password_required() ) {
 	return;
 } ?>
-<h5 class="mb-4">Comments</h5>
+<?php if (get_locale() == 'es_ES'): ?>
+  <h5 class="mb-4">Comentarios</h5>
+<?php else: ?>
+  <h5 class="mb-4">Comments</h5>
+<?php endif; ?>
+
 <div class="p-5 bg-secondary border rounded">
 		<?php if ( have_comments() ) : ?>
-			<h5 class="mb-4">
-				<?php
-				//printf( _nx( 'One comment on “%2$s”', '%1$s comments on “%2$s”', get_comments_number(), 'comments title'),
-					//number_format_i18n( get_comments_number() ), get_the_title() );
-				?>
-			</h5>
+
 			<ul class="comment-list">
 				<?php
 				wp_list_comments( array(
 					'style'       => 'li',
 					'short_ping'  => true,
-					'avatar_size' => false,
+					'avatar_size' => 32,
 				) );
 				?>
 			</ul>

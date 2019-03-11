@@ -4,20 +4,11 @@
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-          <section class="slice slice-lg">
+          <section class="slice slice-lg pb-2">
               <div class="container pt-lg">
                   <div class="row justify-content-center">
                       <div class="col-md-9">
-                          <h1 class="lh-150 mb-3"><?php the_title(); ?></h1>
-                          <p class="lead text-muted mb-0"><?php ( ! has_excerpt() ) ? '' : the_excerpt(); ?></p>
-                          <div class="media align-items-center mt-5">
-                            <?php $user_id = get_the_author_meta('user_email'); ?>
-                              <img alt="Image placeholder" src="<?php echo esc_url( get_avatar_url( $user_id ) ); ?>" class="avatar avatar-sm mr-3">
-                              <div class="media-body">
-                                  <span class="h6 mb-0"><?php the_author(); ?></span>
-                                  <span class="text-small text-muted text-capitalize"><?php echo get_the_date( 'F j, Y' ); ?></span>
-                              </div>
-                          </div>
+                          <h1 class="lh-150 mb-3 text-center"><?php the_title(); ?></h1>
                       </div>
                   </div>
               </div>
@@ -38,20 +29,10 @@
                         <article>
                           <?php the_content(); ?>
                         </article>
-                        <hr>
-
-                        <?php
-                        // If comments are open or we have at least one comment, load up the comment template.
-                                if ( comments_open() || get_comments_number() ) {
-                                      comments_template();
-                                }
-                        ?>
                       </div>
                   </div>
               </div>
           </section>
-
-          <?php //get_template_part('partials/related', 'posts'); ?>
 
 
     	<?php endwhile; else : ?>
