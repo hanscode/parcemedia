@@ -21825,6 +21825,40 @@ ul.sub-menu
     list-style: none;
 }
 
+textarea#comment,
+input#author,
+input#email,
+input#url
+{
+    font-size: 1rem;
+    line-height: 1.7;
+
+    display: block;
+
+    width: 100%; 
+    padding: .625rem 1.1rem;
+
+    transition: all .2s ease-in-out;
+
+    color: #495057;
+    border: .0625rem solid #ced4da;
+    border-radius: .25rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+textarea#comment:focus,
+input#author:focus,
+input#email:focus,
+input#url:focus
+{
+    color: #495057;
+    border-color: rgba(0, 32, 66, .5);
+    outline: 0;
+    background-color: #fff;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 20px rgba(0, 32, 66, .1);
+}
+
 .alignnone
 {
     margin: 5px 20px 20px 0;
@@ -21961,30 +21995,6 @@ a img.aligncenter
             clip-path: none;
 }
 
-blockquote
-{
-    font-size: 1.3em;
-    font-weight: 700;
-    font-style: italic;
-
-    position: relative;
-    top: 10px; 
-
-    margin: 10px 0 40px;
-    padding: 8px 10px 0 20px;
-
-    border-left: 4px solid #002042;
-}
-blockquote small
-{
-    font-size: 13px;
-    line-height: 20px; 
-
-    letter-spacing: .005em;
-
-    color: #adb5bd;
-}
-
 .tiled-gallery .gallery-row
 {
     margin: 0 auto;
@@ -22064,4 +22074,49 @@ figcaption
     padding: 10px 0 0; 
 
     color: #6c7686;
+}
+
+textarea#comment
+{
+    height: calc(7.95rem + .225rem);
+}
+
+input#author
+{
+    height: calc(2.95rem + .125rem);
+}
+
+input#email
+{
+    height: calc(2.95rem + .125rem);
+}
+
+input#url
+{
+    height: calc(2.95rem + .125rem);
+}
+
+input#submit
+{
+    font-size: 1.25rem;
+    line-height: 1.5;
+
+    width: 100%; 
+    padding: .95rem 1rem;
+
+    cursor: pointer;
+
+    color: #fff;
+    border-color: #002042;
+    border-radius: .375rem;
+    background-color: #002042;
+}
+input#submit:hover
+{
+    background-color: #000;
+}
+
+.comment-form-cookies-consent label
+{
+    margin-left: 10px;
 }

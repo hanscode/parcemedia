@@ -33,7 +33,16 @@
         <div class="row align-items-center justify-content-md-between py-4 mt-4 delimiter-top">
             <div class="col-md-6">
                 <div class="copyright text-sm font-weight-bold text-center text-md-left">
-                    &copy; <?php echo date('Y'); ?> <a href="#" class="font-weight-bold" target="_blank">Parce Media, LLC</a>. All rights reserved.
+                  <?php
+                  $all_rights = get_field_object('field_5c8484d7a6192');
+                  $translation = get_field('enable_theme_translation', 'option');
+                  ?>
+                    &copy; <?php echo date('Y'); ?> <a href="<?php echo get_bloginfo('url'); ?>" class="font-weight-bold" target="_blank">Parce Media, LLC</a>.
+                    <?php if ( $translation == 'on' && get_field('all_rights_reserved', 'option')): ?>
+                      <?php the_field('all_rights_reserved', 'option'); ?>
+                    <?php else: ?>
+                      <?php echo $all_rights['label'] ?>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="col-md-6">
@@ -46,6 +55,12 @@
 </footer>
 
 <?php wp_footer(); ?>
-
+<?php
+if (get_field('additional_javascript', 'option')) {
+  echo '<script>';
+    the_field('additional_javascript', 'option');
+  echo '</script>'; 
+}
+?>
 </body>
 </html>

@@ -23,7 +23,7 @@
                   <a href="<?php the_permalink(); ?>"><img alt="Image placeholder" src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'full')); ?>" class="card-img-top"></a>
                   <div class="card-body py-5 text-center">
                       <a href="<?php the_permalink(); ?>" class="h5 lh-150"><?php the_title(); ?></a>
-                      <h6 class="text-muted mt-4 mb-0"><?php echo get_the_date('F j, Y'); ?></h6>
+                      <h6 class="text-muted mt-4 mb-0 text-capitalize"><?php echo get_the_date('F j, Y'); ?></h6>
                   </div>
               </div>
           </div>

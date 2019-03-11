@@ -1,0 +1,253 @@
+{
+    "key": "group_5c847f5474124",
+    "title": "Translation settings",
+    "fields": [
+        {
+            "key": "field_5c847ffe0fdec",
+            "label": "Translation",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Use these settings to quckly translate or change the text in this theme. If you want to remove the text completely instead of modifying it, you can use \"-1\" as a value for particular field translation. \r\n\r\nNote: If you are using this theme for a multilingual website, you need to disable these options and use multilanguage plugins (such as WPML) and manual translation with .po and .mo files located inside the \"languages\" folder.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5c847f64776db",
+            "label": "Enable theme translation?",
+            "name": "enable_theme_translation",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "off": "OFF",
+                "on": "ON"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5c84804ee8eec",
+            "label": "Continue reading",
+            "name": "read_more",
+            "type": "text",
+            "instructions": "Label for read more link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8486f507761",
+            "label": "Comments",
+            "name": "comments",
+            "type": "text",
+            "instructions": "Title text for comments area in single posts.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8481cad7b9a",
+            "label": "404 error: Page not found",
+            "name": "404_error",
+            "type": "text",
+            "instructions": "404 page title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c848208d7b9b",
+            "label": "Oops, Something went missing",
+            "name": "oops_missing",
+            "type": "text",
+            "instructions": "404 page sub-title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c84825bd7b9d",
+            "label": "It looks like nothing was found at this location. Maybe try contacting us?",
+            "name": "404_page_description",
+            "type": "text",
+            "instructions": "404 error page description",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8482abd7b9e",
+            "label": "You may also like",
+            "name": "you_may_also_like",
+            "type": "text",
+            "instructions": "Related posts area title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8482c0d7b9f",
+            "label": "This is not all, there are more for you.",
+            "name": "related_post_description",
+            "type": "text",
+            "instructions": "Description for related post area",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c848366d7ba0",
+            "label": "Sorry, no results found.",
+            "name": "sorry_no_results_found",
+            "type": "text",
+            "instructions": "Message when there are no search results.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8483aad7ba1",
+            "label": "Written by",
+            "name": "written_by",
+            "type": "text",
+            "instructions": "Written by text in the blog page cover area.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8484d7a6192",
+            "label": "All rights reserved.",
+            "name": "all_rights_reserved",
+            "type": "text",
+            "instructions": "Copyrigth footer area",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-translation"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1552258007
+}
