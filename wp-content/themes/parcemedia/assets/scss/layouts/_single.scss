@@ -264,3 +264,9 @@ input {
     margin-left: 10px;
   }
 }
+
+.comment-author {
+  img {
+    @include prefix(border-radius, 50%, webkit moz);
+  }
+}

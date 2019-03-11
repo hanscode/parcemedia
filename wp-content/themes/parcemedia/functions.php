@@ -89,8 +89,14 @@ if( function_exists('acf_add_options_page') ) {
 
 //Edit submit button text in comment form
 function parce_media_submit_label($arg) {
+  if (get_locale() == 'es_ES') {
+    $arg['label_submit'] = 'Responder';
+    return $arg;
+  } else {
     $arg['label_submit'] = 'Reply';
     return $arg;
+  }
+
 }
 add_filter('comment_form_defaults', 'parce_media_submit_label');
 

@@ -22120,3 +22120,8 @@ input#submit:hover
 {
     margin-left: 10px;
 }
+
+.comment-author img
+{
+    border-radius: 50%;
+}
