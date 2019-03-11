@@ -51,7 +51,7 @@
               </div>
           </section>
 
-          <?php //get_template_part('partials/related', 'posts'); ?>
+          <?php get_template_part('partials/related', 'posts'); ?>
 
 
     	<?php endwhile; else : ?>
